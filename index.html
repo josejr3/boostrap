@@ -9,16 +9,16 @@
 <body >
 
     <!-- Barra de navegación -->
-    <nav  class="container-fluid"  data-bs-theme="dark">
-        <div class="row " >
+    <nav  class="navbar navbar-expand-lg bg-body-tertiary"  data-bs-theme="dark">
+        <div class="container-fluid " >
             <a class="col-3 text-light " href="#">Mi Sitio Web</a>
-            <button  class="col dropdown btn btn-secondary dropdown-toggle"  type="button">Menú</button>
-            <div class="col">
-                <ul  class="row dropdown-menu">
-                    <li class="col"><a class="text-light dropdown-item" href="#">Inicio</a></li>
-                    <li class="col"><a class="text-light dropdown-item" href="#">Acerca de</a></li>
-                    <li class="col"><a class="text-light dropdown-item"  href="#">Servicios</a></li>
-                    <li class="col"><a class="text-light dropdown-item" href="#">Contacto</a></li>
+            <button  class="col  ">Menú</button>
+            <div class="col navbar-toggler" >
+                <ul  class="row   ">
+                    <li class="col"><a class="text-light navbar-brand" href="#">Inicio</a></li>
+                    <li class="col"><a class="text-light navbar-brand" href="#">Acerca de</a></li>
+                    <li class="col"><a class="text-light navbar-brand"  href="#">Servicios</a></li>
+                    <li class="col"><a class="text-light navbar-brand" href="#">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -33,16 +33,16 @@
     </header>
 
     <!-- Sección de Contenido -->
-    <section class="container-sm-1 offset-sm-3">
-        <div class="row ">
-            <div class="col ">
+    <section class="container">
+        <div class="row col-12">
+            <div class="col-8 ">
                 <h2>Sección de Contenido Principal</h2>
                 <p>Este es un ejemplo de cómo puedes organizar tu contenido sin utilizar Bootstrap. Las columnas no se ajustarán automáticamente al tamaño de la pantalla.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non lectus et velit auctor convallis. Nulla facilisi.</p>
             </div>
-            <div class="container col ">
-                <h3 class="offset-md-7">Columna Secundaria</h3>
-                <ul class="offset-md-7 list-group">
+            <div class="col-12  col-md-4 ">
+                <h3 >Columna Secundaria</h3>
+                <ul class="list-group">
                     <li class="list-group-item active">Elemento 1</li>
                     <li class="list-group-item">Elemento 2</li>
                     <li class="list-group-item list-group-item-danger">Elemento 3</li>
@@ -52,10 +52,10 @@
     </section>
 
     <!-- Tabla -->
-    <section class="container-sm-1 offset-sm-3">
-        <h2 class="col ">Tabla de Ejemplo</h2>
-        <table class="row table table-hover table-dark">
-            <thead class="col">
+    <section class="container ">
+        <h2>Tabla de Ejemplo</h2>
+        <table class="col-12 table table-hover table-dark">
+            <thead >
                 <tr>
                     <th>#</th>
                     <th>Nombre</th>
@@ -87,28 +87,28 @@
     </section>
 
     <!-- Formulario -->
-    <section class="container-sm-1 offset-sm-3">
-        <h2>Formulario de Contacto</h2>
-        <form>
-            <div>
-                <label for="nombre" lass="form-label">Nombre Completo</label>
-                <input type="text" class="form-control"  id="nombre" placeholder="Escribe tu nombre">
+    <section class="container">
+        <h2 class="col">Formulario de Contacto</h2>
+        <form class="" >
+            <div class="mb-4">
+                <label for="nombre" class="form-label">Nombre Completo</label>
+                <input type="text" class=" col form-control"  id="nombre" placeholder="Escribe tu nombre">
             </div>
-            <div>
+            <div  class="mb-4">
                 <label for="email" lass="form-label">Correo Electrónico</label>
                 <input type="email " class="form-control" id="email" placeholder="nombre@ejemplo.com">
             </div>
-            <div>
-                <label for="mensaje" lass="form-label">Mensaje</label>
-                <textarea id="mensaje" rows="4" placeholder="Escribe tu mensaje"></textarea>
+            <div class="mb-4">
+                <label for="mensaje" lass="form-label">Mensaje</label><br>
+                <textarea id="mensaje" cols="90" rows="4" placeholder="Escribe tu mensaje"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </section>
 
     <!-- Pie de página -->
-    <footer class="container-fluid">
-        <p class="row  offset-md-3 " >&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    <footer class="container col-4">
+        <p class="col " >&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
     </footer>
 
 </body>
